@@ -1,0 +1,94 @@
+.userDataContainerFalse {
+    // border: 1px solid grey;
+    width: 80%;
+    height: 177px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px #b5621f;
+    padding-top: 5px;
+    position: relative;
+}
+
+.userDataContainerTrue {
+    // border: 1px solid grey;
+    width: 80%;
+    height: 177px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px #83fc3c;
+    padding-top: 5px;
+    position: relative;
+}
+
+.userDataInputs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px 0;
+
+    &>span:first-of-type label {
+        width: 70%;
+    }
+}
+
+.userDataInputs span {
+    margin-bottom: 5px;
+}
+
+.UserDataInputFields {
+    border-radius: 5px;
+    background-color: rgba(233, 229, 229, 0.877);
+    border: none;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    outline: none;
+}
+
+.UserDataLabel {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 50px;
+}
+
+.buttonsContainer {
+    // display: flex;
+    // justify-content: center;
+    // position: relative;
+    // width: 
+    // &> :first-child {
+    //     margin-right: 30px;
+
+    // }
+    width: 60%;
+}
+
+.buttonsContainer button {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(233, 229, 229);
+    height: 25px;
+    box-shadow: 1px 2px 6px 1px lightgrey;
+    margin-right: 5px;
+}
+
+.OtherDataButtonContainer {
+    margin: 20px 49px 0 50px;
+    position: relative;
+}
+
+.buttonShowModal {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(233, 229, 229);
+    height: 25px;
+    box-shadow: 1px 2px 6px 1px lightgrey;
+}
+
+.OtherDataButtonContainer button:hover {
+    box-shadow: none;
+}
+
+.buttonsContainer button:active {
+    box-shadow: none;
+}

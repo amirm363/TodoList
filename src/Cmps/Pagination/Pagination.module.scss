@@ -1,0 +1,35 @@
+.PaginationContainer {
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: none;
+    height: 30px;
+}
+
+
+
+.pageNumber {
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 207, 136, 0.637);
+    box-shadow: 1px 1px 1px lightgray;
+    margin-right: 3px;
+    transition: width 0.5s ease, height 0.5s ease;
+    height: 20px;
+    width: 20px;
+}
+
+.currentPageNumber {
+    border-radius: 50%;
+    border: none;
+    background-color: #ffc978;
+    box-shadow: 1px 1px 1px lightgray;
+    margin-right: 3px;
+    height: 25px;
+    width: 25px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.pageNumber:active {
+    box-shadow: none;
+}

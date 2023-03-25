@@ -1,0 +1,34 @@
+.OtherDataContainer {
+    height: 150px;
+    width: 300px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px 5px lightgrey;
+    border: none;
+    position: absolute;
+    left: 0;
+    background-color: beige;
+}
+
+.UserDataInputFields {
+    border-radius: 5px;
+    background-color: rgba(233, 229, 229, 0.877);
+    border: none;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    outline: none;
+}
+
+.userDataInputs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px 0;
+}
+
+.UserDataLabel {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 50px;
+}
