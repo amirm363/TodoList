@@ -23,7 +23,7 @@ export default function UserDataCmp(props: any) {
             </span>
             <span className={Styles.StatusAndButton}>
                 <span className={Styles.StatusSpan}>
-                    <label title={`${props.type === "Posts" ? `Body: ${props.data.body}` : `Completed: ${props.data.completed}`}`}>{`${props.type === "Posts" ? `Body: ${props.data.body}` : `Completed: ${props.data.completed}`} `}</label>
+                    <label title={`${props.type === "Posts" ? `Body: ${props.data.body}` : `Completed: ${props.data.completed}`}`}>{`${props.type === "Posts" ? `Body: ${props.data.body}` : `Completed: ${userData.completed}`} `}</label>
                 </span>
                 {props.type === "Todos" && !userData.completed && <button title='markcompleted' className={Styles.MarkedButton} onClick={setMarked}>Mark Completed</button>}
             </span>

@@ -17,7 +17,12 @@ export default function LabelAndInput(props: any) {
                     <label htmlFor={`${label}Input`} className={Styles.UserDataLabel}>{`${label}:`}</label>
                     <input type="text" id={`${label}Input`} title={`${label}`} className={Styles.UserDataInputFields} value={inputValue[index]} onChange={(e) => setInputValueArray(e.target.value, index)} />
                 </span>)
+
             })}
+            <span className={Styles.ButtonsContainer}>
+                <button title="cancel" className={Styles.ButtonStyle} onClick={() => props.closeAddWindow()}>Cancel</button>
+                <button title="add" className={Styles.ButtonStyle}>Add</button>
+            </span>
         </div>
 
     )
