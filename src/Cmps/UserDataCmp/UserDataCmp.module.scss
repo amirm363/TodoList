@@ -1,0 +1,71 @@
+.MainContainerUserDataCmp {
+    height: 100px;
+    width: 87%;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 10px 0;
+    // display: flex;
+    // flex-direction: column;
+}
+
+.TitleSpan {
+    flex: 1 0 20px;
+    width: 50px;
+    height: 20px;
+    margin: 5px 0 20px 10px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+
+    &>label {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+    }
+
+}
+
+.StatusAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.StatusSpan {
+    display: inline-block;
+    flex: 1 0 20px;
+    width: 70%;
+    height: 20px;
+    margin: 20px 0 20px 10px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    white-space: break-spaces;
+
+    &>label {
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        overflow: hidden;
+    }
+}
+
+.MarkedButton {
+    margin: 12px 10px 0;
+    flex-grow: 0;
+    width: 35%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(233, 229, 229);
+    height: 25px;
+    box-shadow: 1px 2px 6px 1px lightgrey;
+}
+
+.MarkedButton:active {
+    box-shadow: none;
+}

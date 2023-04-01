@@ -6,9 +6,30 @@
     margin: 50px auto;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
     position: relative;
+    animation: hi 3s ease;
+    transition: transform 1s ease;
+    transform: translateX(0);
 }
+
+.card.animate {
+    transform: translate(-280px, 300px);
+}
+
+@keyframes hi {
+    0% {
+        overflow: hidden
+    }
+
+    ;
+
+    100% {
+        overflow: visible
+    }
+
+    ;
+}
+
 
 .searchInputContainer {
     position: relative;
@@ -62,5 +83,12 @@
 }
 
 .UsersDataContainer {
-    // overflow: hidden;
+    position: relative;
+
+}
+
+.todosAndPosts {
+    position: relative;
+    left: 500px;
+    top: -472px;
 }

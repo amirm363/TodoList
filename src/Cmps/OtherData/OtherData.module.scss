@@ -1,13 +1,33 @@
 .OtherDataContainer {
     height: 150px;
     width: 300px;
-    z-index: 2;
+    z-index: 100;
     border-radius: 10px;
     box-shadow: 1px 1px 9px 5px lightgrey;
     border: none;
     position: absolute;
     left: 0;
     background-color: beige;
+
+}
+
+.OtherDataContainer {
+    transform: scale(0);
+    animation: popup 0.1s ease forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .UserDataInputFields {

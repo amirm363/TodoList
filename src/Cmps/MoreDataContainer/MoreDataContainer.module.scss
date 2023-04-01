@@ -1,0 +1,98 @@
+.todosMainContainer {
+    height: 261px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0);
+    animation: popup 0.1s ease forwards;
+    animation-delay: 0.5s;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.todosMainContainer.easeOut {
+    transform: scale(1);
+    animation: popout 0.1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes popout {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.addContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 95%;
+    margin-bottom: 3px;
+}
+
+.todosSubContainer {
+    height: 200px;
+    width: 97%;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px 5px lightgrey;
+}
+
+.addButton {
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    background-color: #e9e5e5;
+    height: 25px;
+    box-shadow: 1px 2px 6px 1px lightgray;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+    background: rgb(9, 156, 241);
+}
+
+.addButon:active {
+    box-shadow: none;
+}

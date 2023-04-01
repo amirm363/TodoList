@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Styles from './OtherData.module.scss'
 import { useRecoilState, useRecoilValue } from 'recoil'
-import { usersDataState } from '../../atoms/atoms'
+import { usersDataState, otherDataOpen } from '../../atoms/atoms'
 
 
 export default function OtherData(props: any) {
     const [otherData, setOtherData] = useRecoilState(usersDataState)
     const [specificUserData, setSpecificUserData] = useState<any[]>([])
+    const [isOtherDataOpen, setOtherDataOpen] = useRecoilState(otherDataOpen)
+
 
 
 
