@@ -1,0 +1,37 @@
+.LabelAndInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 10px;
+    gap: 22px;
+}
+
+
+.AddDataSpan {
+    box-shadow: 0px 0px 5px 3px lightcoral;
+    padding: 11px 0 0 0;
+    display: inline-block;
+    width: 93%;
+    border-radius: 5px;
+    text-align: center;
+    height: 39px;
+}
+
+.UserDataInputFields {
+    border-radius: 5px;
+    background-color: rgba(233, 229, 229, 0.877);
+    border: none;
+    height: 27px;
+    padding-left: 7px;
+    margin-right: 10px;
+    position: relative;
+    outline: none;
+}
+
+.UserDataLabel {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 50px;
+}
